@@ -1,13 +1,23 @@
-#include<bits/stdc++.h>  
-
+//*******Python 时间程序*******
+//import time
+//import os
+//from itertools import repeat 
+//os.system("color 02")
+//for _ in repeat(None): # Other operations.
+//    t = time.localtime(time.time())
+//    localtime = time.asctime(t)
+//    str = "当前时间:" + time.asctime(t)
+//    print(str);
+//    os.system('clear')
+//*******C++时间程序*******
+#include<bits/stdc++.h>
 using namespace std; 
 
 int main(void) 
 
 { 
 
-for(;;) {
-
+for(;;){
 //获取系统时间 
 
 time_t now_time=time(NULL); 
@@ -39,11 +49,8 @@ deadline_tm.tm_hour=13;//[0~23]
 deadline_tm.tm_isdst=0;//default 
 
 deadline_tm.tm_mday=31;//[1~31] 
-
-deadline_tm.tm_mon=2;//[0~11]
-
-system("cls");
- 
+deadline_tm.tm_mon=2;//[0~11] 
+system("clear");
 }
 return 0;
 }
